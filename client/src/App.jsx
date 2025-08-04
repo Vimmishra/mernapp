@@ -9,7 +9,7 @@ import UserDashboard from "./pages/UserDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import UploadMovie from "./pages/admin/UploadMovie";
 import UploadSeries from "./pages/admin/UploadSeries";
-import Layout from "./components/common/LayOut";
+
 import MovieDetails from "./pages/MovieDetails";
 import CommunityNews from "./pages/communityPage";
 import SeriesDetails from "./pages/SeriesDetail";
@@ -22,6 +22,7 @@ import WatchPartyRoom from "./pages/WatchPartyRoom";
 import ViewMorePage from "./pages/viewMore";
 import Plans from "./pages/plans";
 import GetAllRecommendedMoviesList from "./pages/view-all-recommended-movies";
+import Layout from "./components/common/Layout";
 
 function App() {
   return (
