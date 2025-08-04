@@ -24,7 +24,7 @@ import reviewRoutes from "./routes/reviewRoutes.js";
 
 import actorRoutes from "./routes/actorRoutes.js";
 
-import userRoutes from "./routes/userroutes.js";
+import userRoutes from "./routes/userRoutes.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
