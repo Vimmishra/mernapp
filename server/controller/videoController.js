@@ -237,7 +237,7 @@ export const getMovieDetails = async (req, res) => {
 // ---------------- Get All Series ----------------
 export const getAllSeries = async (req, res) => {
   try {
-    const seriesList = await Video.find({ type: "series" });
+    const seriesList = await Video.find({ type: "series" }).sort({createdAt:-1});
     res.status(200).json({ success: true, data: seriesList });
   } catch (err) {
     console.error("❌ Error fetching series:", err.message);
