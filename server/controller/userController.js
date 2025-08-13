@@ -32,6 +32,11 @@ export const addLikedCategory = async (req, res) => {
 
     if (!user.likedCategories.includes(category)) {
       user.likedCategories.push(category);
+
+if(user.likedCategories.length > 5){
+  user.likedCategories.shift()
+}
+
       await user.save();
       console.log("Category added to user successfully.");
     } else {
