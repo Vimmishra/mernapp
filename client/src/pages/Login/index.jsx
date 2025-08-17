@@ -1,6 +1,7 @@
 import { useAuth } from "@/context/AuthContext";
 import { useState } from "react";
 import { Mail, Lock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -59,7 +60,7 @@ export default function Login() {
         </form>
         <p className="mt-4 text-center text-sm text-gray-500">
           Don't have an account?{" "}
-          <a href="/register" className="text-green-600 hover:underline">Sign up</a>
+          <Link href="/register" className="text-green-600 hover:underline">Sign up</Link>
         </p>
       </div>
     </div>
